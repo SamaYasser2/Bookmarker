@@ -1,0 +1,69 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50;
+   
+   
+}
+    /* position: relative; */
+
+h1::before{
+content: "";
+    background-color: #fec260;
+    position: absolute;
+    height: 25%;
+    left: 38%;
+    right: 39%;
+    bottom: 0%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+h1:hover::before{
+    height: 50%;
+}
+
+.content{
+    border-top: black dotted;
+    border-bottom: black dotted;
+
+}
+ .multicolortext{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+   
+    background-clip: text;
+   color: transparent;
+}
+.icon-text{
+    font-family: 'Righteous', sans-serif;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #f06305;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(253, 169, 13, 0.25);
+}
+
+.btn-visit{
+    background-color: #9EB23B;
+    color: white;
+}
+.btn-visit:hover{
+    background-color: #829231;
+    border: solid 1px #4d7929;
+    color: white;
+}
+.btn-Del{
+    background-color: #D30820;
+    color: white;
+}
+.btn-Del:hover{
+    background-color: #a7071a;
+    border: solid 1px  #a7071a;
+    color: white;
+}
